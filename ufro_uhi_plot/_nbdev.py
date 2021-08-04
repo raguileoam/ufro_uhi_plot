@@ -2,10 +2,13 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"Map": "00_map.ipynb",
+index = {"UHIOptions": "00_map.ipynb",
+         "MapOptions": "00_map.ipynb",
          "Transect": "00_map.ipynb",
+         "Map": "00_map.ipynb",
          "Uhi": "01_uhi.ipynb",
-         "OtherDf": "01_uhi.ipynb"}
+         "OtherDf": "01_uhi.ipynb",
+         "Util": "01_uhi.ipynb"}
 
 modules = ["map.py",
            "uhi.py"]

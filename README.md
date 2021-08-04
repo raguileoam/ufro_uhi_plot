@@ -75,11 +75,9 @@ uhi.plotImagesPerDaysArray(output_folder,days_array,extent,prefixFile=prefix_fil
 
 ### Google Colab use
 
-If you have a problem with Google Colab you can install a script in a jupyter notebox that fix this.
+If you have a problem with Google Colab you can install binary shapely in a jupyter notebox that fix this.
 
 ```
-!pip install import-ipynb
-import import_ipynb
-!wget https://raw.githubusercontent.com/raguileoam/Colab/master/CartopyColab.ipynb
-from CartopyColab import cartopy
+!pip uninstall shapely --yes
+!pip install shapely --no-binary shapely
 ```

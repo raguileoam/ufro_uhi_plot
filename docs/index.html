@@ -185,7 +185,7 @@ Plot completed 2019-05-26
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If you have a problem with Google Colab you can install a script in a jupyter notebox that fix this.</p>
+<p>If you have a problem with Google Colab you can install binary shapely in a jupyter notebox that fix this.</p>
 
 </div>
 </div>
@@ -197,10 +197,8 @@ Plot completed 2019-05-26
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install import-ipynb
-<span class="kn">import</span> <span class="nn">import_ipynb</span>
-<span class="o">!</span>wget https://raw.githubusercontent.com/raguileoam/Colab/master/CartopyColab.ipynb
-<span class="kn">from</span> <span class="nn">CartopyColab</span> <span class="kn">import</span> <span class="n">cartopy</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip uninstall shapely --yes
+<span class="o">!</span>pip install shapely --no-binary shapely
 </pre></div>
 
     </div>

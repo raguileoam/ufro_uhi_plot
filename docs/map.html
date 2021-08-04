@@ -47,17 +47,8 @@ nb_path: "00_map.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="Map" class="doc_header"><code>class</code> <code>Map</code><a href="https://github.com/raguileoam/ufro_uhi_plot/tree/master/ufro_uhi_plot/map.py#L29" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Map</code>(<strong><code>df</code></strong>, <strong><code>transects</code></strong>=<em><code>[]</code></em>, <strong><code>legend_stations_label</code></strong>=<em><code>'Estaciones'</code></em>, <strong><code>otherDf</code></strong>=<em><code>None</code></em>, <strong><code>mapbox_username</code></strong>=<em><code>None</code></em>, <strong><code>mapbox_token</code></strong>=<em><code>None</code></em>, <strong><code>mapbox_map_id</code></strong>=<em><code>'ck2hwr0522eal1cm297dkqzis'</code></em>)</p>
+<h2 id="UHIOptions" class="doc_header"><code>class</code> <code>UHIOptions</code><a href="https://github.com/raguileoam/ufro_uhi_plot/tree/master/ufro_uhi_plot/map.py#L29" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UHIOptions</code>(<strong><code>hasBorders</code></strong>=<em><code>None</code></em>, <strong><code>vMin</code></strong>=<em><code>None</code></em>, <strong><code>vMax</code></strong>=<em><code>None</code></em>, <strong><code>transparency</code></strong>=<em><code>0.7</code></em>, <strong><code>showPoints</code></strong>=<em><code>False</code></em>, <strong><code>contour</code></strong>=<em><code>'contourLine'</code></em>, <strong><code>drawMinMaxT</code></strong>=<em><code>False</code></em>, <strong><code>LON_LABEL</code></strong>=<em><code>'Longitud'</code></em>, <strong><code>LAT_LABEL</code></strong>=<em><code>'Latitud'</code></em>, <strong><code>Z_LABEL</code></strong>=<em><code>'°C'</code></em>, <strong><code>Z_UNIT</code></strong>=<em><code>'°C'</code></em>)</p>
 </blockquote>
-<p>Represents a map of urban heat island</p>
-<p>Attributes:
-  df: numpy's dataframe.
-  transects: array of strings.
-  legend_stations_label: string.
-  otherDf: numpy's dataframe.
-  mapbox_username: mapbox's username to plot background map.
-  mapbox_token: mapbox's token to plot background map.
-  mapbox_map_id: mapbox's map id to plot background map.</p>
 
 </div>
 
@@ -80,8 +71,72 @@ nb_path: "00_map.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="Transect" class="doc_header"><code>class</code> <code>Transect</code><a href="https://github.com/raguileoam/ufro_uhi_plot/tree/master/ufro_uhi_plot/map.py#L218" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Transect</code>(<strong><code>path</code></strong>, <strong><code>x</code></strong>, <strong><code>y</code></strong>, <strong><code>color</code></strong>, <strong><code>name</code></strong>)</p>
+<h2 id="MapOptions" class="doc_header"><code>class</code> <code>MapOptions</code><a href="https://github.com/raguileoam/ufro_uhi_plot/tree/master/ufro_uhi_plot/map.py#L43" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>MapOptions</code>(<strong><code>show</code></strong>=<em><code>False</code></em>, <strong><code>file</code></strong>=<em><code>'HeatMap.png'</code></em>, <strong><code>hasImage</code></strong>=<em><code>True</code></em>, <strong><code>hasScaleBar</code></strong>=<em><code>True</code></em>, <strong><code>hasCompassRose</code></strong>=<em><code>True</code></em>, <strong><code>hasLegend</code></strong>=<em><code>True</code></em>, <strong><code>hasColorbar</code></strong>=<em><code>True</code></em>)</p>
 </blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="Transect" class="doc_header"><code>class</code> <code>Transect</code><a href="https://github.com/raguileoam/ufro_uhi_plot/tree/master/ufro_uhi_plot/map.py#L53" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Transect</code>(<strong><code>path</code></strong>, <strong><code>x</code></strong>, <strong><code>y</code></strong>, <strong><code>color</code></strong>, <strong><code>name</code></strong>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="Map" class="doc_header"><code>class</code> <code>Map</code><a href="https://github.com/raguileoam/ufro_uhi_plot/tree/master/ufro_uhi_plot/map.py#L62" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Map</code>(<strong><code>df</code></strong>, <strong><code>transects</code></strong>=<em><code>[]</code></em>, <strong><code>legend_stations_label</code></strong>=<em><code>'Estaciones'</code></em>, <strong><code>otherDf</code></strong>=<em><code>None</code></em>, <strong><code>mapbox_username</code></strong>=<em><code>None</code></em>, <strong><code>mapbox_token</code></strong>=<em><code>None</code></em>, <strong><code>mapbox_map_id</code></strong>=<em><code>'ck2hwr0522eal1cm297dkqzis'</code></em>)</p>
+</blockquote>
+<p>Represents a map of urban heat island</p>
+<p>Attributes:
+  df: numpy's dataframe.
+  transects: array of strings.
+  legend_stations_label: string.
+  otherDf: numpy's dataframe.
+  mapbox_username: mapbox's username to plot background map.
+  mapbox_token: mapbox's token to plot background map.
+  mapbox_map_id: mapbox's map id to plot background map.</p>
 
 </div>
 
