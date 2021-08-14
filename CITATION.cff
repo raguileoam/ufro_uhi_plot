@@ -5,8 +5,8 @@ authors:
     family-names: "Melillán"
     given-names: Aliwen
   -
-    family-names: Pablo
-    given-names: Valenzuela
+    family-names: Valenzuela
+    given-names: Pablo
 cff-version: "1.1.0"
 license: "Apache-2.0"
 message: "If you use this software, please cite it using these metadata."
