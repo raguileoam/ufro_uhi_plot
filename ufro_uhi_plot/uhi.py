@@ -78,7 +78,7 @@ class Uhi:
 
       return dfListDay
 
-    def plotImagesPerDaysArray(self,outputFolder,daysArray,extent,hasBorders=None,hasLimits=False,transects=[],
+    def plotImagesPerDaysArray(self,outputFolder,daysArray,extent,hasBorders=None,hasLimits=False,
                                Z_UNIT="°C",otherDf_id=None,otherDf_name=None,mapbox_username="",mapbox_token="",
                                prefixFile="",hasImage=True,hasScaleBar=True, hasCompassRose=True,hasLegend=True, hasColorbar=True,
                                transparency=.7, showPoints=False,contour="contourLine",drawMinMaxT=False):
@@ -89,8 +89,7 @@ class Uhi:
       daysArray: array of strings of days to plot the urban heat islands.
       extent: array of 4 coordinates of the extent of the map.
       hasBorders: geojson to border the urban heat island in a map. (default:None)
-      hasLimits: (default:False)
-      transects: (default:[])
+      hasLimits: if has temperature's day range or temperature's hour range (default:False)
       Z_UNIT: unit of measure to be displayed in colobar. (default: '°C')
       otherDf_id: id of the temperature station that will not be included in the UHI's triangulation but will be displayed. (default: None)
       otherDf_name: name of the temperature station that will not be included in the UHI's triangulation but will be displayed. (default: None)
@@ -103,9 +102,9 @@ class Uhi:
       hasLegend: boolean that decides if the image neede a Legend or not.
       hasColorbar: boolean that decides if the image needs a color bar or not.
       transparency: trasparency of the UHI's triangulation.
-      showPoints: boolean that decisdes if the image needs show station points.
-      contour:
-      drawMinMaxT:
+      showPoints: boolean that decides if the image needs show station points.
+      contour: show contourLine or only triangulation (default:'contourLine')
+      drawMinMaxT: show station points with minimun and maximum temperature.
       Output: None
       """
       if not os.path.exists(outputFolder):

@@ -81,3 +81,33 @@ If you have a problem with Google Colab you can install binary shapely in a jupy
 !pip uninstall shapely --yes
 !pip install shapely --no-binary shapely
 ```
+
+### Examples
+
+
+
+
+![png](docs/images/output_13_0.png)
+
+
+
+
+
+
+![png](docs/images/output_14_0.png)
+
+
+
+
+
+
+![png](docs/images/output_15_0.png)
+
+
+
+
+
+
+![png](docs/images/output_16_0.png)
+
+
